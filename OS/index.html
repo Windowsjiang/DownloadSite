@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>操作系统 - Winjam藏经阁</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div syle="center-text">
+  <h1>操作系统</h1>
+  <p>    输入资源id或浏览文件夹来获取文件。<br>
+  <!-- Project -->
+  <label for="id" name="idl">资源id</label>
+  <input type="number" name="id">
+  <button type="submit" onclick="click()">跳转</button>
+  <script>
+    var inputValue = document.getElementById("id").value;
+    click = function() {
+      window.location.href = "./"+inputValue;
+    };
+  </script><br>
+  <a href="./OS/Windows/index.html"> Microsoft Windows </a><br>
+  <a href="./OS/Mac/index.html"> macOS、NeXT和BeOS </a><br>
+  <a href= "./OS/linux/index.html"> Linux </a><br>
+  </p>
+  </div>
+  <script src="main.js"></script>
+</body>
+<foot>
+  <p> <a href="https://github.com/Windowsjiang/Down/"> GitHub</a>• Copyright (C) Windowsjiang 2025</p>
+</foot>
+</html>
